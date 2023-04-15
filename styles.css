@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* background: url("./assets/image/world.png") no-repeat  center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+.section video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.container{
+    width: 600px;
+    gap: 15px;
+    border: 2px solid  #93CED2;
+    position: absolute;
+    top: 50%;
+    background-color: #090931;
+    left: 50%;
+    opacity: 0.9;
+    padding: 1.4em 1.6em;
+    border-radius: 0.3em;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    box-shadow: 0 1.6em 24em rgb(40, 4, 67,0.3);
+    line-height: 2.2em;
+}
+.circle {
+    /* width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center; */
+    display: flex;
+    /* background: transparent; */
+    opacity: 0.5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.flexp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+h2{
+    font-size: 1.27em;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+}
+
+span{
+    font-weight: 500;
+    color: #ffffff;
+}
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid steelblue; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .container{
+        width: 350px;
+        gap: 15px;
+        position: absolute;
+        top: 50%;
+        background-color: #090931;
+        left: 50%;
+        opacity: 0.9;
+        padding: 1.4em 1.6em;
+        border-radius: 0.3em;
+        transform: translate(-50%, -50%);
+        font-size: 1.2em;
+        box-shadow: 0 1.6em 24em rgb(40, 4, 67,0.3);
+        line-height: 2.2em;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: column;
+      }
+  }

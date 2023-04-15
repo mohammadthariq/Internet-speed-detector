@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/image/internet.webp">
+    <title>Internet Speed Detector</title>
+  </head>
+  <body>
+    <div class="section">
+      <video preload="auto" autoplay loop playsinline muted>
+        <source src="./assets/videos/worldmap.mp4" />
+      </video>
+      <div class="container">
+        <h2>Internet Speed Check</h2>
+        <div class="flex">
+          <div class="circle">
+            <p>Speeds in Bits</p>
+            <div class="loader" id="loadhidebp"></div>
+            <span id="bits"> </span>
+          </div>
+          <div class="circle">
+            <p>Speeds in Kbs</p>
+            <div class="loader" id="loadhidekb"></div>
+            <span id="kbs"> </span>
+          </div>
+          <div class="circle">
+            <p>Speeds in Mbs</p>
+            <div class="loader" id="loadhidemb"></div>
+            <span id="mbs"> </span>
+          </div>
+        </div>
+        <div class="flexp" id="status"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
